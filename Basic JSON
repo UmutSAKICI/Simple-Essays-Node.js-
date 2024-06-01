@@ -1,0 +1,23 @@
+app.get("/kullaniciListesi/:id", async (req, res) => {
+  const kullanicilar = [
+    {
+      id: "1",
+      isim: "Umut Sakıcı",
+      yas: "21",
+    },
+
+    {
+      id: "2",
+      isim: "Nurten Sakıcı",
+      yas: "54"
+    }
+  ]
+
+  const kullaniciId = req.params.id;
+  const kullanici = kullanicilar.find(kID => kID.id === kullaniciId);
+
+  if (kullanici)
+    res.json(kullanici);
+  else
+    res.send("<p>Böyle Bir Kullanıcı Yok!</p>")
+});
