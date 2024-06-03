@@ -1,1 +1,0 @@
-Burası şimdilik boş kalsın.
