@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: auto;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(100, 100, 100);
+  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.container {
+  max-width: 116rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  column-gap: 6.4rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.aradakiCizgi {
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+select,
+button,
+input,
+li,
+a,
+textarea {
+  list-style: none;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+}
