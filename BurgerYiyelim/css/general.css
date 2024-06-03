@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: auto;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  background-color: rgb(100, 100, 100);
+  background-image: url("/img/bg-text.png");
+
+  /* Bu kod sayesinde sayfayı yandan küçülttüğümüzde kaybolan renkleri düzeltiyor. */
+  /* Responsive design için çok önemli bir kod. */
+  overflow-x: hidden;
+}
+
+.container {
+  /* 1160px */
+  max-width: 116rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+select,
+button,
+input,
+li,
+a,
+textarea {
+  list-style: none;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+}
+
+a {
+  text-decoration: none;
+}
